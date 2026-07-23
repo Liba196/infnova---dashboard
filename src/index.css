@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Grounded palette for an internship review dashboard:
+     soft paper and surface tones, charcoal ink, and a restrained
+     forest accent. This avoids synthetic neon or overly-bright "AI"
+     branding colors and supports a calm, professional UI. */
+  --color-paper: #f7f3ec;
+  --color-surface: #ffffff;
+  --color-ink: #232a28;
+  --color-ink-muted: #5e665e;
+  --color-border: #d8d3c6;
+  --color-accent: #3b6358;
+  --color-accent-soft: #e9f0ea;
+  --color-accent-hover: #325248;
+
+  --color-status-pending: #946a2d;
+  --color-status-pending-bg: #faf1de;
+  --color-status-reviewed: #2e5e92;
+  --color-status-reviewed-bg: #e7eef7;
+  --color-status-accepted: #3b6358;
+  --color-status-accepted-bg: #e9f0ea;
+  --color-status-rejected: #a53c3f;
+  --color-status-rejected-bg: #f7dfde;
+
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Signature element: applicant status renders like a review stamp —
+   slight rotation, doubled border, monospace caps. Ties directly to
+   the act of reviewing/triaging applications rather than decorating it. */
+.stamp {
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+  transform: rotate(-1.5deg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
