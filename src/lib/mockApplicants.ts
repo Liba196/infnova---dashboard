@@ -68,9 +68,9 @@ const TRACKS: ApplicantSummary["track"][] = [
   "mobile",
 ];
 const STATUSES: ApplicantSummary["status"][] = [
-  "pending",
-  "shortlisted",
   "accepted",
+  "shortlisted",
+  "pending",
   "rejected",
 ];
 const COUNTRIES = ["Ethiopia"];
@@ -134,7 +134,7 @@ export function getMockApplicant(id: string): Applicant | undefined {
     ...summary,
     phoneNumber:
       "+251" +
-      (600000000 + Number(summary.id.replace("mock-", "")))
+      (944304572 + Number(summary.id.replace("mock-", "")))
         .toString()
         .slice(-9),
     skills: ["communication", "problem solving"],
