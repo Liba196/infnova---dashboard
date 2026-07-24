@@ -41,7 +41,7 @@ const NAMES = [
   "Kidist Getachew",
   "Selamawit Berhanu",
   "Chaltu Leta",
-  "Tsion Tesfaye",
+  "Libanos Yackob",
   "Birtukan Abera",
   "Marta Yohannes",
   "Etenesh Alemu",
