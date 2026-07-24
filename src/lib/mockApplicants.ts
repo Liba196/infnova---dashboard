@@ -6,7 +6,7 @@ import type {
 } from "../types/applicant";
 
 const NAMES = [
-  "Abebe Bikila",
+  "Libanos Yackob",
   "Bekele Gerba",
   "Getachew Haile",
   "Dawit Yohannes",
@@ -41,7 +41,7 @@ const NAMES = [
   "Kidist Getachew",
   "Selamawit Berhanu",
   "Chaltu Leta",
-  "Libanos Yackob",
+  "Abebe Bikila",
   "Birtukan Abera",
   "Marta Yohannes",
   "Etenesh Alemu",
